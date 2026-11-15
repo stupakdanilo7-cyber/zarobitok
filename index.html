@@ -32,6 +32,8 @@ body{font:16px/1.35 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Ro
 button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;touch-action:manipulation}
 button:disabled{cursor:default}
 #app{max-width:520px;margin:0 auto}
+/* смуга під годинником і батареєю: вміст при гортанні не заїжджає під них */
+body::before{content:"";position:fixed;left:0;right:0;top:0;height:env(safe-area-inset-top);background:var(--bg);z-index:15}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px;margin-top:8px}
 
 /* шапка */

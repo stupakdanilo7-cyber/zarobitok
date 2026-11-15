@@ -1,6 +1,6 @@
 // Зберігає програму в телефоні, щоб вона відкривалася без інтернету.
 // Нова версія: змінити V — телефон завантажить файли заново при наступному запуску з інтернетом.
-var V = 'zarobitok-1.0';
+var V = 'zarobitok-1.1';
 var FILES = ['./', './index.html', './app.js?v=1', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', function (e) {
